@@ -1,0 +1,141 @@
+.usuario-mainContent {
+  margin-left: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.usuario-errorMessage {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.usuario-h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+.usuario-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.usuario-thead th {
+  background-color: #1E293B;
+  color: white;
+  padding: 8px;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.usuario-tbody td {
+  padding: 8px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.usuario-tbody tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+.usuario-tbody tr:hover {
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.usuario-button {
+  padding: 4px 8px;
+  margin: 4px;
+  border: none;
+  display: inline-block;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.usuario-button-edit {
+  background-color: #1a523d;
+  color: white;
+}
+
+.usuario-button-delete {
+  background-color: #864040;
+  color: white;
+}
+
+.usuario-button:hover {
+  background-color: #0F172A;
+  color: white;
+}
+
+.usuario-form input,
+.usuario-form select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db; 
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+
+.usuario-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.usuario-form button {
+  padding: 10px 18px;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #1E293B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.usuario-form button:hover {
+  background-color: #0F172A;
+}
+
+.usuario-form button[type="button"] {
+  background-color: #F87171;
+  margin-left: 10px;
+}
+
+.usuario-form button[type="button"]:hover {
+  background-color: #B91C1C;
+}
+
+@media (max-width: 768px) {
+  .usuario-mainContent {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .usuario-table {
+    font-size: 12px;
+  }
+
+  .usuario-form {
+    grid-template-columns: 1fr;
+  }
+}

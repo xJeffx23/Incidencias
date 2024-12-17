@@ -1,0 +1,364 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+// *{
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+//     font-family: 'Monserrat', sans-serif;
+// }
+
+// :root{
+//     --primaryColor: hsl(0, 85%, 56%);
+//     --hovercolor: hsl(0, 75%, 76%);
+//     --palegreen: hsl(0, 21%, 84%); 
+//     --whitecolor: hsl(0, 0%, 100%);
+//     --blackcolor: hsl(0, 0%, 0%);
+//     --greytext: hsl(0, 0%, 75%);
+//     --bgcolor: hsl(0, 0%, 100%);
+//     --inputcolor: hsl(330, 12%, 97%);
+
+//     /* font y tipografía */
+//     --biggestfontsize: 2.5rem;
+//     --h1fontsize: 1.5rem;
+//     --h2fontsize: 1.25rem;
+//     --h3fontsize: 1rem;
+//     --normalfontsize: .938rem;
+//     --smallfontsize: .813rem;
+//     --smallestfontsize: .75rem;
+
+// }
+
+// .flex{
+//     display: flex;
+//     align-items: center;
+// }
+// .grid{
+//     display: grid;
+//     align-items: center;
+//     gap: 1.5rem
+// }
+
+// html{
+//     font-size: 90%;
+// }
+
+// a{
+//     text-decoration: none;
+// }
+
+// li{
+//     list-style: none;
+// }
+
+// .icon{
+//     font-size: var(--h2fontsize);
+//     cursor:pointer;
+// }
+
+// img, video{
+//     height: auto;
+//     width: 100%;
+// }
+
+// .message{
+//     display: none;
+// }
+
+// .showMessage{
+//     display: block;
+//     color: var(--whitecolor);
+//     padding: 10px;
+//     background: hsl(0, 85%, 56%);
+//     border-radius: 10px;
+//     text-align: center;
+
+// }
+
+// .showMessage{
+//     display: block;
+//     color: var(--whitecolor);
+//     background: hsl(0, 85%, 56%);
+//     border-radius: 10px;
+//     text-align: center;
+// }
+
+// .btn{
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     border-radius: 8px;
+//     padding: .8rem 1rem;
+//     color: var(--greytext);
+// }
+
+// .btn .icon{
+//     margin-left: .5rem;
+// }
+// .btn:hover{
+//     color: var(--inputcolor);
+//     background: var(--palegreen);
+// }
+
+// .loginPage, .registerPage{
+//     height: 100vh;
+//     width: 100%;
+//     margin: auto;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     box-shadow: 0 7px 50px rgb(223, 213, 213);
+
+//     .container {
+//         height: 75vh;
+//         width: 60%;
+//         margin: auto;
+//         justify-content: space-between;
+//         border-radius: 20px; 
+//         background: hsl(210, 73%, 18%); 
+//         color: var(--whitecolor); 
+//         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+//         overflow: hidden;
+
+//         .videoDiv{
+//             position: relative;
+//             display: flex;
+//             flex-basis: 50%;
+//             width: 70%;
+//             height: 100%; 
+//             padding: 0 1.5rem; 
+//             text-align: center;
+//             justify-content: center;
+//             flex-direction: column;
+//             margin: auto;
+//             border-radius: 10px;
+//             overflow: hidden;
+        
+//             video, .footerDiv {
+//                 position: absolute;
+//             }
+        
+//             video {
+//                 height: 100%;
+//                 width: 100%;
+//                 object-fit: cover;
+//                 top: 0;
+//                 bottom: 0;
+//                 right: 0;
+//                 left: 0;
+//             }
+        
+//             .textDiv {
+//                 position: relative;
+            
+//                 .title {
+//                     color: var(--whitecolor);
+//                     font-size: 35px;
+//                     font-weight: 800;
+//                     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+//                 }
+            
+//                 p {
+//                     color: var(--whitecolor);
+//                     padding: 1rem;
+//                     font-weight: 400;
+//                     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+//                 }
+//             }
+            
+        
+//             .footerDiv {
+//                 bottom: 10px;
+//                 padding: 0 1rem;
+//                 height: 60px;
+//                 background: rgba(255, 255, 255, 0.248);
+//                 left: 10px;
+//                 right: 10px;
+//                 justify-content: space-between;
+//                 backdrop-filter: blur(5px); /* Aumentado el desenfoque */
+//                 border-radius: 10px;
+                
+//             .text {
+//                 color: hsl(210, 73%, 18%); 
+//             }
+
+//             .btn {
+//                 background: var(--whitecolor);
+//                 color: hsl(210, 73%, 18%); 
+                
+//                 padding: .8rem 1.5rem; 
+//                 border-radius: 10px;
+//                 font-weight: 400;
+//                 transition: .3s ease;
+            
+//                 &:hover {
+//                     background: var(--hoverColor);
+//                     color: var(--blackcolor);
+//                 }
+//             }
+
+        
+//             }
+//         }
+        
+//         .formDiv{
+//             flex-basis: 50%;
+//             margin: auto;
+//             flex-direction: column;
+//             gap: 1.5rem;
+//             transform: translateY(-1rem);
+
+//             .headerDiv{
+//                 text-align: center;
+//                 padding: 1.5rem 0;
+
+//                 img{
+//                     width: 60px;
+//                     padding-bottom: .5rem;
+//                 }
+
+//                 h3{
+//                     font-size: 25px;
+//                     color: var(--whitecolor);
+//                     font-weight: 600;
+//                 }
+//             }
+//             .form{
+//                 gap: 1rem;
+
+//                 .inputDiv{
+//                     .icon{
+//                         color: var(--greytext);
+//                     }
+
+//                     input{
+//                         background: none;
+//                         outline: none;
+//                         border: none;
+//                         width: 200px;
+//                     }
+
+//                     label{
+//                         color: var(--whitecolor);
+//                         font-weight: 400;
+//                         font-size: 14px;
+//                         padding: .5rem 0;
+//                         display: block;
+//                     }
+
+//                     .input{
+//                         gap: .5rem;
+//                         padding: 1rem;
+//                         background: var(--inputcolor);
+//                         border-radius: 10px;
+//                     }
+//                 }
+
+//                 .btn{
+//                 padding: .8rem;
+//                 background: var(--primaryColor);
+//                 border-radius: 10px;
+//                 color: var(--whitecolor);
+//                 align-items: center;
+//                 margin: auto;
+//                 justify-content: center;
+//                 font-size: 16px;
+//                 width: 100%;
+//                 gap: .5rem;
+//                 transition: .3s ease;
+
+//                 .icon{
+//                     font-size: 25px;
+//                     transition: .3s ease;
+//                 }
+//                 &:hover{
+//                     background: var(--hovercolor);
+//                     color: var(--whitecolor);
+
+//                     .icon{
+//                         color:var(--whitecolor);
+//                         transform: translateX(5px)
+//                     }
+//                   }
+//                 }
+//                 .forgotPassword{
+//                     font-size: 13px;
+//                     color: var(--whitecolor);
+//                     opacity: .7;
+//                     text-align: center;
+
+//                     a{
+//                         text-decoration: underline;
+//                         cursor: pointer;
+//                         color: var(--whitecolor);
+//                         opacity: 1;
+
+//                     }
+
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// //responsiva
+
+// @media screen and (max-width: 678px){
+//     .loginPage, .registerPage{
+//         .container{
+//             .videoDiv{
+//                 .textDiv{
+//                     .title{
+//                         font-size: 20px;
+//                     }
+
+//                     p{
+//                         padding: 1rem;
+//                     }
+//                 }
+
+//                 .footerDiv{
+//                     gap: 1rem;
+//                     .text{
+//                         font-size: 12px;
+//                     }
+
+//                     .btn{
+//                         padding: .8rem 1.5rem;
+//                     }
+
+//                 }
+//             }
+
+//             .formDiv{
+
+
+//                 .headerDiv{
+//                     padding: 1.5rem 0;
+
+//                         h3{
+//                             font-size: 20px;
+
+//                         } 
+//                 }
+
+//                 .form{
+
+//                     .inputDiv{
+//                         input{
+//                             width: 100%;
+//                             max-width: 200px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 927px){
+//     .loginPage, .registerPage{
+//         .container{
+//             width: 85%;
+//         }
+//     }
+// }
+

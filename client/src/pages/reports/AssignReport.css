@@ -1,0 +1,137 @@
+.assignReport {
+  padding: 15px;
+  background-color: #ffffff;
+  margin-left: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.assignReport h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+.assignReport__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.assignReport__form select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.assignReport__form select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.assignReport__form button {
+  padding: 8px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #1E293B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assignReport__form button:hover {
+  background-color: #0F172A;
+}
+
+.assignReport__form button[type="button"] {
+  background-color: #F87171;
+  margin-left: 10px;
+}
+
+.assignReport__form button[type="button"]:hover {
+  background-color: #B91C1C;
+}
+
+/* Estilos para la tabla */
+.assignReport__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.assignReport__table th {
+  background-color: #1E293B;
+  color: white;
+  padding: 6px 10px;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #E2E8F0;
+}
+
+.assignReport__table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.assignReport__table tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+.assignReport__table tr:hover {
+  background-color: #E2E8F0;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para los botones */
+.assignReport__button {
+  padding: 4px 8px;
+  margin: 4px;
+  border: none;
+  display: inline-block;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.assignReport__button.bg-red-600 {
+  background-color: #864040;
+  color: white;
+}
+
+.assignReport__button:hover {
+  opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+  .assignReport {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .assignReport__table {
+    font-size: 12px;
+  }
+
+  .assignReport__form {
+    grid-template-columns: 1fr;
+  }
+}

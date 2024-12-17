@@ -1,0 +1,73 @@
+.create-report-container {
+  max-width: 800px;
+  margin-left: 550px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-report-container .form-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.create-report-container .report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-report-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-report-container label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.create-report-container input[type="text"],
+.create-report-container textarea,
+.create-report-container select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.create-report-container input[type="text"]:focus,
+.create-report-container textarea:focus,
+.create-report-container select:focus {
+  border-color: #5c6bc0;
+}
+
+.create-report-container textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.create-report-container input[type="file"] {
+  font-size: 1rem;
+}
+
+.create-report-container .submit-btn {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #5c6bc0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-report-container .submit-btn:hover {
+  background-color: #3f4f97;
+}
